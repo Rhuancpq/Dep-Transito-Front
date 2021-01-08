@@ -1,0 +1,9 @@
+input {
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #5E6178;
+    border-style: groove;
+    font-size: large;
+    width: 45%;
+    padding: 10px 20px;
+}
