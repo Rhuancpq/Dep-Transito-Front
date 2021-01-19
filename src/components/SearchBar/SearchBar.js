@@ -1,5 +1,6 @@
 import './SearchBar.css';
 import React from 'react'
+import { MdSearch } from 'react-icons/md';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -13,13 +14,18 @@ class SearchBar extends React.Component {
 
   render(){
     return (
-      <form onSubmit={(e) => this.props.onSubmit(e)}>
-        <label>
+      <form onSubmit={(e, v) => this.props.onSubmit(e, this.state.value)}>
+        <div className='Input-div'>
           <input type='text'
           value={this.state.value}
           onChange={(e) => this.handleChange(e)}
           />
-        </label>
+          <button>
+            <MdSearch style={{fontSize: '45px',
+            backgroundColor: '5E6178',
+            color: 'E6191E'}}/>
+          </button>
+        </div>
       </form>
     );
   }

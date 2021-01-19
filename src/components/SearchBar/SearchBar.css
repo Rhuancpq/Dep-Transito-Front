@@ -1,9 +1,34 @@
 input {
+    border: 0;
+    font-size: large;
+    width: 100%;
+    padding: 10px 20px;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    display: flex;  
+    padding: 0;
+    border: 0;
+}
+
+.Input-div{
     border-radius: 5px;
     border-width: 2px;
     border-color: #5E6178;
     border-style: groove;
-    font-size: large;
+    display: inline-flex;
+    overflow: hidden;
+    position:relative;
     width: 45%;
-    padding: 10px 20px;
+    padding: 0;
+}
+
+.Input-div :hover{
+    background-color: #F0EFF4;
 }

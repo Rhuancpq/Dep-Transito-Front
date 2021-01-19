@@ -1,7 +1,7 @@
 import './App.css';
 import Toolbar from './components/Toolbar/Toolbar';
 import Home from './components/Home/Home';
-import Proprietarios from './components/Proprietarios/Proprietarios'
+import Proprietarios from './components/Proprietarios/Proprietarios';
 import {
   BrowserRouter as Router,
   Switch,
